@@ -2,7 +2,7 @@ const router = require("express").Router();
 // get the database object from the config file by importing the getDb method
 const { getDb } = require("../config/db_connection");
 
-// configure a simple get request on the router
+// configure a simple get request on the app
 router.get("/", async (req, res) => {
   // grab the database
   const collection = getDb().collection("CarData");
